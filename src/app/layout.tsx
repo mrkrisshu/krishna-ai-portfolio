@@ -30,14 +30,14 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Krishna",
-      url: "https://toukoum.fr",
+      url: "https://krishnabantola.site",
     },
   ],
   creator: "Krishna",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://toukoum.fr",
+    url: "https://krishnabantola.site",
     title: "Krishna Portfolio",
     description: "Interactive portfolio with an AI-powered Memoji that answers questions about me",
     siteName: "Krishna Portfolio",
