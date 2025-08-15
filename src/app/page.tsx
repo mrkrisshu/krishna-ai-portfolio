@@ -1,12 +1,9 @@
-'use client';
-
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/react"
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
-import GitHubButton from "react-github-btn";
 import "./globals.css";
 
 // Load Inter font for non-Apple devices
@@ -17,8 +14,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Krishna Portfolio",
-  description:
-    "Interactive portfolio with an AI-powered Memoji that answers questions about me, my skills, and my experience",
+  description: "Interactive portfolio with an AI-powered Memoji that answers questions about me, my skills, and my experience",
   keywords: [
     "Krishna", 
     "Portfolio", 
@@ -34,14 +30,14 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Krishna",
-      url: "https://krishnabantola.site",
+      url: "https://toukoum.fr",
     },
   ],
   creator: "Krishna",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://krishnabantola.site",
+    url: "https://toukoum.fr",
     title: "Krishna Portfolio",
     description: "Interactive portfolio with an AI-powered Memoji that answers questions about me",
     siteName: "Krishna Portfolio",
@@ -88,18 +84,6 @@ export default function RootLayout({
         >
           <main className="flex min-h-screen flex-col">
             {children}
-
-            {/* GitHub Repo Button */}
-            <div className="mt-4 flex justify-center">
-              <GitHubButton
-                href="https://github.com/mrkrisshu/krishna-ai-portfolio"
-                data-size="large"
-                data-show-count="true"
-                aria-label="Star mrkrisshu/krishna-ai-portfolio on GitHub"
-              >
-                Star
-              </GitHubButton>
-            </div>
           </main>
           <Toaster />
         </ThemeProvider>
