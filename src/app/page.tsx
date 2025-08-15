@@ -92,14 +92,14 @@ export default function Home() {
         </div>
       </div>
 
-      {/* GitHub button */}
+      {/*  button */}
       <div className="absolute top-6 right-8 z-20">
-        <GithubButton
+        <Button
           //targetStars={68}
           animationDuration={1.5}
           label="Star"
           size={'sm'}
-          repoUrl="https://github.com/toukoum/portfolio"
+          repoUrl="https://github.com/mrkrisshu/krishna-ai-portfolio"
         />
       </div>
 
