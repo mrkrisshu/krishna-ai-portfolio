@@ -1,4 +1,4 @@
-import { openai } from '@ai-sdk/openai';
+import { createOpenAI } from '@ai-sdk/openai';
 import { streamText } from 'ai';
 import { SYSTEM_PROMPT } from './prompt';
 import { getContact } from './tools/getContact';
@@ -12,19 +12,18 @@ import { getSports } from './tools/getSport';
 
 export const maxDuration = 30;
 
-// ❌ Pas besoin de l'export ici, Next.js n'aime pas ça
 function errorHandler(error: unknown) {
-  if (error == null) {
-    return 'Unknown error';
-  }
-  if (typeof error === 'string') {
-    return error;
-  }
-  if (error instanceof Error) {
-    return error.message;
-  }
+  if (error == null) return 'Unknown error';
+  if (typeof error === 'string') return error;
+  if (error instanceof Error) return error.message;
   return JSON.stringify(error);
 }
+
+// Initialize OpenRouter client
+const openrouter = createOpenAI({
+  apiKey: process.env.OPENROUTER_API_KEY,
+  baseURL: 'https://openrouter.ai/api/v1',
+});
 
 export async function POST(req: Request) {
   try {
@@ -45,7 +44,7 @@ export async function POST(req: Request) {
     };
 
     const result = streamText({
-      model: openai('gpt-4o-mini'),
+      model: openrouter('deepseek/deepseek-chat-v3-0324:free'), // ✅ Free & fast model
       messages,
       toolCallStreaming: true,
       tools,
@@ -57,7 +56,6 @@ export async function POST(req: Request) {
     });
   } catch (err) {
     console.error('Global error:', err);
-    const errorMessage = errorHandler(err);
-    return new Response(errorMessage, { status: 500 });
+    return new Response(errorHandler(err), { status: 500 });
   }
 }

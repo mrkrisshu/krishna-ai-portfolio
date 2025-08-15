@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 
 const InternshipCard = () => {
   const openMail = () => {
-    window.open('mailto:raphaelgiraud12@gmail.com', '_blank');
+    window.open('mailto:mrkrisshu@gmail.com', '_blank');
   };
   const router = useRouter();
 
@@ -23,14 +23,14 @@ const InternshipCard = () => {
           {/* Avatar placeholder */}
           <div className="bg-muted h-16 w-16 overflow-hidden rounded-full shadow-md">
             <img
-              src="/avatar-raphael.jpg"
-              alt="Raphael's avatar"
+              src="/krishna-photo.jpeg"
+              alt="Krishna's avatar"
               className="h-full w-full object-cover"
             />
           </div>
           <div>
             <h2 className="text-foreground text-2xl font-semibold">
-              Raphael Giraud
+              Krishna Bantola
             </h2>
             <p className="text-muted-foreground text-sm">
               Intership Application
@@ -66,7 +66,7 @@ const InternshipCard = () => {
           <div>
             <p className="text-foreground text-sm font-medium">Location</p>
             <p className="text-muted-foreground text-sm">
-              Preferably San Francisco 🇺🇸
+              Preferably Bangalore India
             </p>
           </div>
         </div>
@@ -78,13 +78,12 @@ const InternshipCard = () => {
             <p className="text-foreground text-sm font-medium">Tech stack</p>
             <div className="text-muted-foreground grid grid-cols-1 gap-y-1 text-sm sm:grid-cols-2">
               <ul className="decoration-none list-disc pl-4">
-                <li>Python, Next.js, TypeScript, Tailwind CSS</li>
-                <li>Vercel AI SDK, Supabase, Prisma</li>
-                <li>OpenAI, Mistral, Claude, Whisper</li>
+                <li>Python, Java, DSA, PHP, HTML</li>
+                <li>Vercel AI SDK, Supabase,</li>
+                <li>OpenAI, Mistral, Claude, </li>
                 <li>Prompt engineering, fine-tuning</li>
               </ul>
               <ul className="list-disc pl-4">
-                <li>Weaviate, Pinecone, vector DBs</li>
                 <li>Hugging Face Transformers</li>
                 <li>Tool routing, calling, RAG</li>
                 <li>Hackathons + AI agent workflows</li>
@@ -108,9 +107,7 @@ const InternshipCard = () => {
           What I bring
         </p>
         <p className="text-foreground text-sm">
-          Real-world AI dev experience from Lighton (MCP, secure GPTs, RAG
-          pipelines). <br /> 3x hackathon wins (ETH Oxford, Paris Blockchain
-          Week, Colosseum Breakout on Solana). <br /> I ship fast, and love
+          Real-world AI dev experience. <br /> I ship fast, and love
           building useful things that actually work.
         </p>
       </div>

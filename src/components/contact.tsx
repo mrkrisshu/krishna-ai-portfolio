@@ -7,33 +7,29 @@ import { ChevronRight } from 'lucide-react';
 export function Contact() {
   // Contact information
   const contactInfo = {
-    name: 'Raphael Giraud',
-    email: 'raphaelgiraud12@gmail.com',
-    handle: '@Raphael.Giraud',
+    name: 'Krishna Bantola D',
+    email: 'mrkrisshu@gmail.com',
+    handle: '@Krishna.Bantola',
     socials: [
       {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/raphael-giraud-60939519a/',
+        url: 'https://www.linkedin.com/in/krishna-bantola-74b7b6202/',
       },
       {
-        name: 'Youtube',
-        url: 'https://www.youtube.com/@toukoum',
+        name: 'Leetcode',
+        url: 'https://leetcode.com/u/mrkrisshu/',
       },
       {
         name: 'Instagram',
-        url: 'https://www.instagram.com/raphael.giraud/',
-      },
-      {
-        name: 'Discord',
-        url: 'https://discord.com/users/toukoum',
+        url: 'https://www.instagram.com/__krishnachhetri/',
       },
       {
         name: 'Github',
-        url: 'https://github.com/toukoum',
+        url: 'https://github.com/mrkrisshu',
       },
       {
         name: 'X',
-        url: 'https://x.com/toukoumcode',
+        url: 'https://x.com/bantola_krishna',
       },
     ],
   };

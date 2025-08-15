@@ -9,17 +9,16 @@ export const getInternship = tool({
     return `Here’s what I’m looking for 👇
 
 - 📅 **Duration**: 6-month internship starting **September 2025**
-- 🌍 **Location**: Preferably **San Francisco** or anywhere in the **United States**
+- 🌍 **Location**: Preferably **Bangalore** or anywhere in the **India**
 - 🧑‍💻 **Focus**: AI development, full-stack web apps, SaaS, agentic workflows
-- 🛠️ **Stack**: Python, React/Next.js, Tailwind CSS, TypeScript, GPT, RAG, etc.
-- 💼 **Visa**: I’m based in Paris 🇫🇷 so I might need **J-1 sponsorship**
-- ✅ **What I bring**: Real experience with secure on-prem GPTs (Lighton), deepsearch engines, custom RAG tools, and hackathon wins like **ETH Oxford** & **Paris Blockchain Week**
+- 🛠️ **Stack**: Python, Java, SQL, TypeScript, GPT, PHP, etc.
+- ✅ **What I bring**: Real experience with secure on-prem GPTs , deepsearch engines, custom RAG tools, and hackathon particiption like **24Hour Hackathon**  
 - 🔥 I move fast, learn faster, and I’m HUNGRYYYYY for big challenges
 
 📬 **Contact me** via:
-- Email: raphaelgiraud12@gmail.com
-- LinkedIn: [linkedin.com/in/raphael-giraud](https://www.linkedin.com/in/raphael-giraud-ai/)
-- GitHub: [github.com/raphaelgiraud](https://github.com/toukoum)
+- Email: mrkrisshu@gmail.com
+- LinkedIn: [linkedin.com/in/Krishna Bantola](https://www.linkedin.com/in/krishna-bantola-74b7b6202/)
+- GitHub: [github.com/Krishna Bantola](https://github.com/mrkrisshu)
 
 Let's build cool shit together ✌️
     `;
